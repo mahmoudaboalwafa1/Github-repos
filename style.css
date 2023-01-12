@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.repos-container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+@media (max-width: 800px) {
+  div.repos-container {
+    width: 100%;
+  }
+}
+
+form {
+  display: flex;
+  align-items: center;
+  border: solid 15px #eee;
+  width: 100%;
+}
+
+input {
+  height: 40px;
+  padding: 27px;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  border: 3px solid #e91e63;
+}
+
+form span {
+  background-color: #f44336;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 90px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+div.details {
+  background-color: hsl(0, 0%, 88%);
+  padding: 20px;
+}
+
+p.repoName {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+}
+
+a.link,
+.star,
+.watchers {
+  background-color: #e91e63;
+  text-decoration: none;
+  float: right;
+  transform: translate(-20px, -54px);
+  box-shadow: 0px 0px 5px black;
+  padding: 2px;
+  margin: 7px;
+}
+
+a.link {
+  background-color: #009688;
+  color: black;
+  cursor: pointer;
+}
+
+.watchers {
+  background-color: #fbbc05;
+}
